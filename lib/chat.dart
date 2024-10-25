@@ -78,17 +78,17 @@ class _ChatState extends State<Chat> {
                     color: Colors.blueAccent,
                   ),
                   onPressed: () async {
-                    print('사진추가');
-                    FilePickerResult? result = await FilePicker.platform
-                        .pickFiles(allowMultiple: true);
+                    // print('사진추가');
+                    // FilePickerResult? result = await FilePicker.platform
+                    //     .pickFiles(allowMultiple: true);
 
-                    if (result != null) {
-                      List<File> files =
-                          result.paths.map((path) => File(path!)).toList();
-                      return result;
-                    } else {
-                      // User canceled the picker
-                    }
+                    // if (result != null) {
+                    //   List<File> files =
+                    //       result.paths.map((path) => File(path!)).toList();
+                    //   return result;
+                    // } else {
+                    //   // User canceled the picker
+                    // }
                   },
                 ),
                 SizedBox(
